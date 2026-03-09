@@ -1,11 +1,10 @@
-export const authorize = (roles:string[])=>{
-
-    return (req:any, res:any, next:any)=>{
-
-        if(!roles.includes(req.user.role)) {
-            return res.status(403).json({message: "Forbidden"})
+export const authorize = (roles: string[]) => {
+    return (req: any, res: any, next: any) => {
+        console.log(req.user.role);
+        if (!roles.includes(req.user.role)) {
+            return res.status(403).json({ message: "Forbidden" });
         }
 
-        next()
-    }
-}
+        next();
+    };
+};
