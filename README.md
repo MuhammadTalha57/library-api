@@ -19,7 +19,7 @@ A RESTful API for managing a library system with books, users, and borrowing rec
 ### Installation
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/MuhammadTalha57/library-api.git
 cd library-api
 npm install
 ```
